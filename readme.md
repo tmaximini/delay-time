@@ -19,11 +19,11 @@ delayTime(120, function(err, result));
 //=> result will be an object with
 {
 	delays: [
-		{ beat: '1/4': 500 },
+		{ beat: '1/4', value: 500 },
 		...
 	],
 	preDelays: [
-		{ beat: '1/128': 15.63 },
+		{ beat: '1/128', value: 15.63 },
 		...
 	],
 }
@@ -56,13 +56,15 @@ $ delay-time --help
 
 #### input
 
-*Required*  
+*Required*
+
 Type: `Number`
 
 
 #### cb
 
 *Required*
+
 Type: `function(err, result)`
 
 ## License

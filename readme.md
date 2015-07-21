@@ -44,7 +44,10 @@ $ delay-time --help
     $ delay-time [bpm]
 
   Examples
-    $ delay-time 125
+    $ delay-time 130
+
+ ![Example](example.png)
+
 ```
 
 

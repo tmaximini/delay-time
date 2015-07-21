@@ -46,9 +46,8 @@ $ delay-time --help
   Examples
     $ delay-time 130
 
- ![Example](example.png)
-
 ```
+![Example](example.png)
 
 
 ## API

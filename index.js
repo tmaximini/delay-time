@@ -18,13 +18,13 @@ module.exports = function delayTime(bpm, cb) {
 	var delays = delayValues.map(function(val, i) {
 		return {
 			beat: delayValueStrings[i],
-			delay: getDelayTime(bpm, val)
+			value: getDelayTime(bpm, val)
 		};
 	});
 	var preDelays = preDelayValues.map(function(val, i) {
 		return {
 			beat: preDelayValueStrings[i],
-			delay: getDelayTime(bpm, val)
+			value: getDelayTime(bpm, val)
 		};
 	});
 

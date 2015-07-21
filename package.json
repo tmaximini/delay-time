@@ -1,6 +1,6 @@
 {
   "name": "delay-time",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculating delay and predelay time for a given bpm",
   "license": "MIT",
   "repository": "tmaximini/delay-time",

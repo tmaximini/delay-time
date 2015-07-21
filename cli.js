@@ -27,7 +27,7 @@ delayTime(cli.input[0], function(err, result) {
 
 
 	result.delays.forEach(function(val) {
-		delayTable.push([val.beat, val.delay + 'ms']);
+		delayTable.push([val.beat, val.value + 'ms']);
 	});
 	console.log(delayTable.toString());
 	process.stdout.write('\n\n');
@@ -36,7 +36,7 @@ delayTime(cli.input[0], function(err, result) {
     	head: ['Note Value', 'Delay Time']
 	});
 	result.preDelays.forEach(function(val) {
-		predelayTable.push([val.beat, val.delay + 'ms']);
+		predelayTable.push([val.beat, val.value + 'ms']);
 	});
 	console.log(predelayTable.toString());
 });

@@ -5,8 +5,8 @@ var delayTime = require('./');
 
 it('should calculate the delays correctly', function() {
 	delayTime(120, function(err, result) {
-		assert.deepEqual(result.delays[0], { 'beat': '1/4', 'delay': '500' });
-		assert.deepEqual(result.delays[3], { 'beat': '1', 'delay': '2000' });
+		assert.deepEqual(result.delays[0], { 'beat': '1/4', 'value': '500' });
+		assert.deepEqual(result.delays[3], { 'beat': '1', 'value': '2000' });
 	});
 });
 
@@ -20,7 +20,7 @@ it('should have an delays and predelays array', function() {
 
 it('coerces string values correctly', function() {
 	delayTime('120.0', function(err, result) {
-		assert.deepEqual(result.delays[0], { 'beat': '1/4', 'delay': '500' });
+		assert.deepEqual(result.delays[0], { 'beat': '1/4', 'value': '500' });
 	});
 
 });

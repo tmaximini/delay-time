@@ -16,7 +16,7 @@ $ npm install --save delay-time
 var delayTime = require('delay-time');
 
 delayTime(120, function(err, result));
-//=> result will be an object with
+//=> result will be an object with two arrays
 {
 	delays: [
 		{ beat: '1/4', value: 500 },
@@ -25,7 +25,7 @@ delayTime(120, function(err, result));
 	preDelays: [
 		{ beat: '1/128', value: 15.63 },
 		...
-	],
+	]
 }
 ```
 
@@ -54,7 +54,7 @@ $ delay-time --help
 
 ### delayTime(bpm, cb(err, result))
 
-#### input
+#### bpm
 
 *Required*
 
